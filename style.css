@@ -1,0 +1,305 @@
+body{
+    background: linear-gradient(#891f1f,#876571);
+}
+
+.navbar-brand img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10px;
+}
+
+/*apply scroll to column*/
+.first-div::-webkit-scrollbar {
+  width: 0px;
+}
+
+.first-div::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.first-div::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.second-div::-webkit-scrollbar {
+  width: 0px;
+}
+
+.second-div::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.second-div::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.navbar-style , .nav-link{color:white !important;}
+
+/*left hand side column*/
+.first-div p,
+.first-div span,
+.first-div i,
+.second-div p,
+.second-div span,
+.second-img-list i{
+    color: white;
+}
+
+.first-div,.second-div{
+    font-size: 13px;
+    height: 90vh; 
+    overflow-x: hidden;
+}
+
+.left-box{
+      background: linear-gradient(#891f1f,#876571);
+}
+
+
+.song-list-row-style{background-color:#242222}
+.song-list-row-style img{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+}
+
+.left-box img{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    opacity: 0.7;
+
+}
+
+.left-box h4 ,.text-color span{
+    color: white;
+}
+
+.first-col{
+    text-align: center;
+    padding: 7px;
+}
+
+.first-col img{
+    margin-left: 10px;
+}
+
+.song-list-row-style h6{
+    color: white;
+
+}
+.Music-time{
+    line-height: 10px;
+}
+
+
+/*right hand side column*/
+.second-div h4 ,h6{
+    color: white;
+}
+
+.first-img-list img{
+    width: 5rem;
+    height: 5rem;
+}
+.second-img-list img{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 10px;
+}
+
+.second-img-list-padding{
+    text-align: center;
+    padding: 7px;
+}
+
+.button-style{
+    /*linear-gradient(#b277b3,#51085a) !important;*/
+    
+    background:linear-gradient(#dbb6c4,#5a081f) !important;
+    width: 8rem !important;
+       border-style: none;
+}
+
+.three-dot-icon{
+    font-size: 17px;
+}
+
+
+/*Header section */
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-right: 4rem;
+}
+  
+.search-icon {
+    padding: 10px;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+input{
+    background-color:#891f1f !important;
+    border-radius: 10px !important;
+}
+::placeholder {
+  padding-left:2rem;
+  color: white;
+}
+
+.coldplay-logo img{
+    height: 10vh;
+    width: 5vw;
+    border-radius: 50%;
+}
+
+.mic-icon{
+    padding-top: 10px;
+    margin-left: -30px;
+}
+
+.bell-icon{
+    font-size: 28px;
+}
+
+.bell-icon span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: red;
+}
+
+.red-dot{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-top: -1rem;
+}
+
+
+ /*Music player-footer section*/
+.bottom-footer{
+    background-color: #7a2a2a;
+    height: 5rem;
+    width: 100%;
+}
+
+.audio-control-image{
+    text-align: left;
+}
+
+.cs_audioplayer {color: white;}
+.ban-icon{
+    padding-left: 23px;
+}
+
+#player {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.cs_audioplayer i {
+    position: absolute;
+    margin-top: -6px;
+   
+}
+
+.cs_audioplayer img{
+    width:4rem;
+    height:4rem;
+    position: absolute;
+}
+
+.fa-volume-up i{
+    right: 0;
+}
+
+.volume-high{
+    padding-left: 2rem;
+}
+
+#ending-time{
+    padding-left: 17rem;
+}
+
+
+
+#song-duration1 {
+    position: absolute;
+    left: 36px;
+    margin: 1;
+    height: 5px;
+    width: 260px;
+    background: #555;
+    margin-top: -12px;
+}
+
+#song-duration2 {
+    position: absolute;
+    left: 36px;
+    height: 5px;
+    width: 100px;
+    background: #1aacb3;
+    margin-top: -12px;
+}
+
+#large-circle{
+    position: absolute;
+    left: 8rem;
+    height: 1rem;
+    width: 1rem;
+    background: #63b0bd;
+    margin-top: -18px;
+    border-radius: 50%;
+}
+
+#large-circle:hover{
+    cursor: pointer;
+}
+
+#volume-range{
+    position: absolute;
+    left: 73px;
+    height: 5px;
+    width: 90px;
+    background: white;
+}
+
+
+#volume-applied{
+    position: absolute;
+    left: 73px;
+    height: 5px;
+    width: 40px;
+    background: #1aacb3;
+}
+
+#large-circle-volume{
+    position: absolute;
+    left: 103px;
+    height: 1rem;
+    width: 1rem;
+    background: #63b0bd;
+    margin-top: -5px;
+    border-radius: 50%;
+}
+
+#large-circle-volume:hover{
+    cursor: pointer;
+}
+
+
+.zoom-out{
+    padding-left: 10rem;
+}

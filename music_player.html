@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Player</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-default navbar-style p-3">
+                <a class="navbar-brand" href="#"><img src="images/music_logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="  navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favourites</a>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="input-icons">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+
+                            <i class="fa-solid fa-microphone mic-icon"></i>
+                        </div>
+                    </form>
+
+                    <i class="fa-solid fa-bell bell-icon"></i>
+                    <span class="red-dot"></span>
+                    <a class="navbar-brand coldplay-logo" href="#"><img src="images/coldplay-logo.jpg"></a>
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="container" >
+            <div class="row">
+                <!-- left hand side column -->
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8" >
+                    <div class="first-div">
+                        <div class="row mt-4 left-box">
+                            
+                            <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                                <img src="./images/vishal-shekhar.jpg">
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                                <div class="row mt-5 pl-2">
+                                    <div class="col-8 col-sm-8 col-md-8 col-lg-8">
+                                        <h4>Vishal-Shekhar</h4>
+                                        <p>Music Composer</p>
+                                    </div>
+
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                        <p> <span> 1421 followers.</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="row pl-2">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                                        <p>Vishal–Shekhar are an Indian music composer, production, singing and songwriting duo consisting of Vishal Dadlani and Shekhar Ravjiani from Mumbai. Known predominantly for their work as music composers in Hindi cinema, Vishal–Shekhar have also recorded in Telugu and Marathi, with the likes of Akon, The Vamps, Imogen Heap, Diplo. </p>
+                                    </div>
+                                </div>
+
+                                <div class="row pl-2">
+                                    <div class="col-6 col-sm-5 col-md-5 col-lg-5">
+                                        <button type="submit" class="btn btn-primary btn-md button-style"><center>Play All</center></button>
+                                        <p class="text-color"><span>350 film sound tracks.</span></p>
+                                    </div>
+
+                                    <div class="col-6 col-sm-7 col-md-7 col-lg-7">
+                                        <p class="text-color"><span>Follow</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>01</span><img src="images/ghungroo-image.jpg">
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Gungroo</h6><p class="Music-time">Arijit Singh</p>
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>02</span><img src="images/Bahara.jpg">
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Bahara</h6><p class="Music-time">Shreya Ghoshal</p>
+                            </div>
+
+                          <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>03</span><img src="images/jai-jai.jpg">
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Jai Jai Shivshankar</h6><p class="Music-time">Vishal Dadlani</p>
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>04</span><img src="images/swag.jpg">
+                            </div>
+
+                           <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Swag se swagat</h6><p class="Music-time">Vishal Dadlani</p>
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>04</span><img src="images/jag-ghumeya.jpg">
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Jag ghoomeya</h6><p class="Music-time">Rahat fati ali khan</p>
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>05</span><img src="images/khuda-jane.jpg">
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Khuda Jane</h6><p class="Music-time">Vishal-shekhar</p>
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>06</span><img src="images/ishqwalalove.jpg">
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Ishq wala love</h6><p class="Music-time">Shekhar</p>
+                            </div>
+
+                           <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>07</span><img src="images/ajab-si.jpg">
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Ajab Si</h6><p class="Music-time">kk</p>
+                            </div>
+
+                           <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 song-list-row-style">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 first-col">
+                                <span>08</span><img src="images/hairats.jpg">
+                            </div>
+
+                           <div class="col-3 col-sm-3 col-md-3 col-lg-3 pt-2">
+                                <h6>Hairat</h6><p class="Music-time">Ali</p>
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5 pt-3">
+                                <p>4.44</p>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 pt-3">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- right hand side Column -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-3">
+
+                    <div class="second-div first-img-list">
+
+                        <!-- Similar Artist -->
+                        <div class="row mt-4">
+                            <div class="col-8 col-sm-8 col-md-7 col-lg-7">
+                                <h4>Similar Artists</h4>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-5 col-lg-5">
+                               <p> View All  </p>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-2">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                <img src="images/arijit.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Arijit Singh</h6>
+                                <p>Singer</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <div class="three-dot">
+                                    <p><i class="fa-solid fa-ellipsis three-dot-icon"></i></p>
+                                    <p>4.44</p>  
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                <img src="images/ajay.jpg">
+                            </div>
+
+                             <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Ajay-Atul</h6>
+                                <p>Composer,Singer</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                 <div class="three-dot">
+                                    <p><i class="fa-solid fa-ellipsis three-dot-icon"></i></p>
+                                    <p>4.44</p>  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                <img src="images/shreya.jpg">
+                            </div>
+
+                             <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Shreya Ghoshal</h6>
+                                <p>Singer</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                 <div class="three-dot">
+                                    <p><i class="fa-solid fa-ellipsis three-dot-icon"></i></p>
+                                    <p>4.44</p>  
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Recently Played -->
+                        <div class="row mt-5">
+                            <div class="col-8 col-sm-8 col-md-7 col-lg-7">
+                                <h4>Recently Played</h4>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-5 col-lg-5">
+                                <p>View All  </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 second-img-list">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 second-img-list-padding pl-3">
+                                <span>01</span><img src="images/ghungroo-image.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Ghungaroo</h6><p>Arijit Singh</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <i class="fa-regular fa-heart pt-3"></i>
+                            </div>
+                        </div>
+
+                         <div class="row mt-2 second-img-list">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 second-img-list-padding pl-3">
+                                <span>02</span><img src="images/bahara.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Bahara</h6><p>Shreya Ghoshal</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <i class="fa-regular fa-heart pt-3"></i>
+                            </div>
+                        </div>
+
+                         <div class="row mt-2 second-img-list">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 second-img-list-padding pl-3">
+                                <span>03</span><img src="images/jai-jai.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Jai Jai Shivshankar</h6><p>Vishal</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <i class="fa-regular fa-heart pt-3"></i>
+                            </div>
+                        </div>
+
+                         <div class="row mt-2 second-img-list">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 second-img-list-padding pl-3">
+                                <span>04</span><img src="images/swag.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Swag se swagat</h6><p>Vishal</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <i class="fa-regular fa-heart pt-3"></i>
+                            </div>
+                        </div>
+
+                         <div class="row mt-2 second-img-list">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 second-img-list-padding pl-3">
+                                <span>05</span><img src="images/jag-ghumeya.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Jag ghoomeya</h6><p>Rahat fate ali khan</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <i class="fa-regular fa-heart pt-3"></i>
+                            </div>
+                        </div>
+
+                         <div class="row mt-2 second-img-list">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 second-img-list-padding pl-3">
+                                <span>06</span><img src="images/khuda-jane.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Khuda Jane</h6><p>Vishal-shekhar</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <i class="fa-regular fa-heart pt-3"></i>
+                            </div>
+                        </div>
+
+                         <div class="row mt-2 second-img-list">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 second-img-list-padding pl-3" >
+                                <span>07</span><img src="images/ishqwalalove.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Ishq wala love</h6><p>Shekhar</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <i class="fa-regular fa-heart pt-3"></i>
+                            </div>
+                        </div>
+
+                         <div class="row mt-2 second-img-list">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 second-img-list-padding pl-3">
+                                <span>07</span><img src="images/ajab-si.jpg">
+                            </div>
+
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <h6>Ajab Si</h6><p>kk</p>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                <i class="fa-regular fa-heart pt-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Player Control Bar -->
+            <div class="container-fluid bottom-footer">
+            <div class="container">
+               <!-- <audio id="cs_audio" controls>
+                    <source src="path-to-music.mp3" type="audio/mpeg">
+                </audio> -->
+                    <div class="cs_audioplayer">
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 mt-3 audio-control-image">
+                                <div class="row">
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                         <img src="images/bahara.jpg" style="">
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                         <h6>Bahara</h6>
+                                         <p>Shreya Ghoshal</p>
+                                    </div>
+
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                        <i class="fa-regular fa-heart"></i><i class="fa-sharp fa-solid fa-ban ban-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-8 col-sm-8 col-md-6 col-lg-6 mt-3">
+                                <div class="row">
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                        
+                                    </div>
+
+                                    <div class="col-1 col-sm-1 col-md-1 col-lg-1">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                    </div>
+
+                                    <div class="col-1 col-sm-1 col-md-1 col-lg-1">
+                                        <i class="fa-solid fa-backward-step"></i>
+                                    </div>
+
+                                    <div class="col-1 col-sm-1 col-md-1 col-lg-1">
+                                        <i class="fa-sharp fa-solid fa-pause"></i>
+                                    </div>
+
+                                    <div class="col-1 col-sm-1 col-md-1 col-lg-1">
+                                        <i class="fa-solid fa-forward-step"></i>
+                                    </div>
+
+                                    <div class="col-1 col-sm-1 col-md-1 col-lg-1">
+                                        <i class="fa-solid fa-repeat"></i>
+                                    </div>
+
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div id="player">
+                                                <span id="starting-time">1.23</span>
+                                                <div id="song-duration1"></div>
+                                                <div id="song-duration2"></div>
+                                                <div id="large-circle"></div>
+                                                <span id="ending-time">4.44</span>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-sm-4 col-md-3 col-lg-3 mt-3 music-player-right-icon">
+                                
+                                <i class="fa-sharp fa-solid fa-bars three-bar"></i>
+                                <i class="fa-sharp fa-solid fa-volume-high volume-high"></i>
+                                <div id="volume-range"></div>
+                                <div id="volume-applied"></div>
+                                <div id="large-circle-volume"></div>
+                                <i class="fa-sharp fa-solid fa-up-right-and-down-left-from-center zoom-out"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>
